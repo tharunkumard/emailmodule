@@ -41,9 +41,10 @@ tls: {
 app.get('/email', (req, res) => {
   var from = "emailmoduledemo@gmail.com";
   var to = req.query.to;
-  var subject = req.query.subject;
+  var subject = "Appointment Booking Successful";
   var generateTextFromHTML = true;
-  var html = req.query.html;
+  //var html = req.query.html;
+  var html = "Your appointment is booked";
   const mailOptions = {
     from:from,
     to:to,
@@ -59,4 +60,3 @@ app.get('/email', (req, res) => {
     msg: 'Your email was sent'
   });
 });
-

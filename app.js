@@ -16,7 +16,7 @@ const oauth2Client = new OAuth2(
 );
 
 oauth2Client.setCredentials({
-    refresh_token: "1//04oEjsB2x6YcuCgYIARAAGAQSNwF-L9IrAq3YTZWCoiSA1bjAK2Z4Q9huEX-hO4ty5_wgcO-z-r03Mh15VhaXCPwLu9r0HvIv2XE"
+    refresh_token: "1//04gijjnZP_gAHCgYIARAAGAQSNwF-L9Ird-jhzh6H_iEdsDiwcT3GIQp_J5UTHrQf8RcY_oJxhj6tlmuumWlQjcLpRTUdhIT_vmA"
 });
 const accessToken = oauth2Client.getAccessToken()
 
@@ -27,7 +27,7 @@ const smtpTransport = nodemailer.createTransport({
          user: "emailmoduledemo@gmail.com", 
          clientId: "730505427363-ii2d419v6baq5vq99ifcce8pck9g210a.apps.googleusercontent.com",
          clientSecret: "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",
-         refreshToken: "1//04oEjsB2x6YcuCgYIARAAGAQSNwF-L9IrAq3YTZWCoiSA1bjAK2Z4Q9huEX-hO4ty5_wgcO-z-r03Mh15VhaXCPwLu9r0HvIv2XE",
+         refreshToken: "1//04gijjnZP_gAHCgYIARAAGAQSNwF-L9Ird-jhzh6H_iEdsDiwcT3GIQp_J5UTHrQf8RcY_oJxhj6tlmuumWlQjcLpRTUdhIT_vmA",
          accessToken: accessToken
     }
 });
